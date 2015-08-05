@@ -5,6 +5,24 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="sbF-RY-OM5">
+            <objects>
+                <viewController id="TbH-4G-Inh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bYX-Hc-G8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="nX2-Cu-aZW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o3x-VG-XB6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tgp-0U-mEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1334" y="-469"/>
+        </scene>
         <!--Name-->
         <scene sceneID="asR-V3-BtV">
             <objects>
@@ -45,7 +63,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Name" id="cmd-Vz-Fil">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XUj-xS-6YF"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XUj-xS-6YF">
+                            <connections>
+                                <segue destination="TbH-4G-Inh" kind="show" id="Wdp-Ej-4NY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="MQ3-Ew-Uel" kind="show" identifier="Show Entry" id="9LN-yo-eyB"/>
