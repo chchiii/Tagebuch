@@ -26,7 +26,7 @@ class TagebuchTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,4 +47,7 @@ class TagebuchTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        //COE
+    }
 }
