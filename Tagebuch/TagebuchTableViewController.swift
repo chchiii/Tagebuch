@@ -37,7 +37,7 @@ class TagebuchTableViewController: UITableViewController {
         
         print("lol")
 
-        var Text = TagebuchEintäge[indexPath.row]
+        let Text = TagebuchEintäge[indexPath.row]
         cell.textLabel?.text = Text.text
         
         

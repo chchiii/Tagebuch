@@ -47,6 +47,9 @@
                     <navigationItem key="navigationItem" id="cmd-Vz-Fil">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XUj-xS-6YF"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="pX5-NF-NHB" kind="show" identifier="Show Entry" id="8j7-Og-SyC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qs2-XQ-khX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,6 +66,14 @@
                     <view key="view" contentMode="scaleToFill" id="iGO-t6-JB1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOm-0E-Cqr">
+                                <rect key="frame" x="0.0" y="64" width="600" height="333"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
