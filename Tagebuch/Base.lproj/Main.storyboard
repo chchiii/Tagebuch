@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="2146" y="-469"/>
         </scene>
-        <!--Name-->
+        <!--Tagebuch-->
         <scene sceneID="asR-V3-BtV">
             <objects>
                 <tableViewController id="hRp-Fb-VyH" customClass="TagebuchTableViewController" customModule="Tagebuch" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                             <outlet property="delegate" destination="hRp-Fb-VyH" id="x9L-H3-wd4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Name" id="cmd-Vz-Fil">
+                    <navigationItem key="navigationItem" title="Tagebuch" id="cmd-Vz-Fil">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XUj-xS-6YF">
                             <connections>
                                 <segue destination="4L5-0S-Oh4" kind="showDetail" id="Wdp-Ej-4NY"/>
@@ -71,29 +71,29 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="Q8R-74-jje" kind="push" identifier="ShowEntry" id="CAh-GG-M09"/>
+                        <segue destination="5Ji-ig-UMV" kind="push" identifier="ShowEntry" id="Pdk-qn-OrZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qs2-XQ-khX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1334" y="294"/>
         </scene>
-        <!--j-->
-        <scene sceneID="iwa-n9-Ofr">
+        <!--Eintrag-->
+        <scene sceneID="Ln7-hE-inQ">
             <objects>
-                <viewController id="Q8R-74-jje" sceneMemberID="viewController">
+                <viewController id="5Ji-ig-UMV" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CQe-Dh-lRo"/>
-                        <viewControllerLayoutGuide type="bottom" id="FST-Sy-hsS"/>
+                        <viewControllerLayoutGuide type="top" id="RAE-u3-AWY"/>
+                        <viewControllerLayoutGuide type="bottom" id="G2N-cQ-7mg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="X29-kU-4fc">
+                    <view key="view" contentMode="scaleToFill" id="WvU-fP-Ykv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="j" prompt="" id="gjw-J0-mmQ"/>
+                    <navigationItem key="navigationItem" title="Eintrag" id="x0N-QZ-4Kj"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bsn-nl-0lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l9z-hm-nWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2146" y="294"/>
         </scene>
