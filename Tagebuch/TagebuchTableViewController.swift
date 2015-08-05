@@ -46,11 +46,12 @@ class TagebuchTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        //COE
+        print("tab")
+        performSegueWithIdentifier("Show Entry", sender: <#T##AnyObject?#>)
+
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        print("tab")
         if segue.identifier == "Show Entry" {
 //            var dvc =
             
