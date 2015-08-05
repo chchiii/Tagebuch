@@ -50,6 +50,7 @@ class TagebuchTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("tab")
         if segue.identifier == "Show Entry" {
 //            var dvc =
             
