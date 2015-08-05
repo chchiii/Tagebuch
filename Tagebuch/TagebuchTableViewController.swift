@@ -48,4 +48,13 @@ class TagebuchTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         //COE
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "" {
+            
+        } else {
+            
+        }
+    }
+    
 }
