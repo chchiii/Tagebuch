@@ -15,6 +15,7 @@
 		9D2A8CCA1B727C1100EF4BEB /* TagebuchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CC91B727C1100EF4BEB /* TagebuchTests.swift */; };
 		9D2A8CD51B727C1100EF4BEB /* TagebuchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CD41B727C1100EF4BEB /* TagebuchUITests.swift */; };
 		9D2A8CE31B72848E00EF4BEB /* TagebuchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CE21B72848E00EF4BEB /* TagebuchTableViewController.swift */; };
+		9D2A8CE51B72858100EF4BEB /* Eintrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CE41B72858100EF4BEB /* Eintrag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9D2A8CD41B727C1100EF4BEB /* TagebuchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagebuchUITests.swift; sourceTree = "<group>"; };
 		9D2A8CD61B727C1100EF4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D2A8CE21B72848E00EF4BEB /* TagebuchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagebuchTableViewController.swift; sourceTree = "<group>"; };
+		9D2A8CE41B72858100EF4BEB /* Eintrag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eintrag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				9D2A8CB11B727C1100EF4BEB /* AppDelegate.swift */,
 				9D2A8CE21B72848E00EF4BEB /* TagebuchTableViewController.swift */,
+				9D2A8CE41B72858100EF4BEB /* Eintrag.swift */,
 				9D2A8CB51B727C1100EF4BEB /* Main.storyboard */,
 				9D2A8CBB1B727C1100EF4BEB /* Assets.xcassets */,
 				9D2A8CBD1B727C1100EF4BEB /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				9D2A8CE31B72848E00EF4BEB /* TagebuchTableViewController.swift in Sources */,
 				9D2A8CBA1B727C1100EF4BEB /* Tagebuch.xcdatamodeld in Sources */,
+				9D2A8CE51B72858100EF4BEB /* Eintrag.swift in Sources */,
 				9D2A8CB21B727C1100EF4BEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
