@@ -21,9 +21,6 @@ class TagebuchTableViewController: UITableViewController {
         
     }
 
-
-    // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -56,7 +53,7 @@ class TagebuchTableViewController: UITableViewController {
 //            var dvc =
             
         } else {
-            
+          //CODe
         }
     }
     
