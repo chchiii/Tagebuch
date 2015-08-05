@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Tagebuch
 //
-//  Created by Christopher Lindhof on 05.08.15.
-//  Copyright © 2015 Christopher Lindhof. All rights reserved.
+//  Created by Christopher on 05.08.15.
+//  Copyright © 2015 Christopher. All rights reserved.
 //
 
 import UIKit
