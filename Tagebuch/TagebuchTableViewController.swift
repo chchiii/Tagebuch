@@ -57,4 +57,9 @@ class TagebuchTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            //add code here for when you hit delete
+        }
+    }
 }
