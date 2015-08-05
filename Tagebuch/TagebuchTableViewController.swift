@@ -13,11 +13,12 @@ class TagebuchTableViewController: UITableViewController {
     
     var TagebuchEintäge: [Eintrag] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let neuerEintrag = Eintrag(überschrift: "Test", text: "Test", datum: "22.7.2015")
-        TagebuchEintäge.append(neuerEintrag)
+            TagebuchEintäge.append(neuerEintrag)
         
     }
 
@@ -31,21 +32,16 @@ class TagebuchTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        
-        print("lol")
-
+            print("lol")
         let Text = TagebuchEintäge[indexPath.row]
-        cell.textLabel?.text = Text.text
-        
-        
+            cell.textLabel?.text = Text.text
         
         return cell
     }
-
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
+   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("tab")
         performSegueWithIdentifier("ShowEntry", sender: nil)
-
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -53,13 +49,13 @@ class TagebuchTableViewController: UITableViewController {
 //            var dvc =
             
         } else {
-          //CODe
+//          CODe
         }
     }
     
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            //add code here for when you hit delete
-        }
-    }
+//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if editingStyle == .Delete {
+//            //add code here for when you hit delete
+//        }
+//    }
 }
