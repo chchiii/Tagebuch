@@ -13,7 +13,6 @@ class TagebuchTableViewController: UITableViewController {
     
     var TagebuchEintäge: [Eintrag] = []
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,11 +36,10 @@ class TagebuchTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
         print("lol")
-        cell.textLabel?.text = "sl"
 
-//        var Text = TagebuchEintäge[indexPath.row]
-//        cell.textLabel?.text = Text.text
-//        
+        var Text = TagebuchEintäge[indexPath.row]
+        cell.textLabel?.text = Text.text
+        
         
         
         return cell
