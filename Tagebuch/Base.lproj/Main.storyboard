@@ -74,7 +74,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="5Ji-ig-UMV" kind="push" identifier="ShowEntry" id="Pdk-qn-OrZ"/>
+                        <segue destination="5Ji-ig-UMV" kind="show" identifier="ShowEntry" id="Pdk-qn-OrZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qs2-XQ-khX" userLabel="First Responder" sceneMemberID="firstResponder"/>

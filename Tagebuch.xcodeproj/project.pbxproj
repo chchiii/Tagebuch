@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225A3FCE1B736CAE00C88517 /* Eintrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A3FCD1B736CAE00C88517 /* Eintrag.m */; };
 		9D2A8CB21B727C1100EF4BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CB11B727C1100EF4BEB /* AppDelegate.swift */; };
 		9D2A8CB71B727C1100EF4BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2A8CB51B727C1100EF4BEB /* Main.storyboard */; };
 		9D2A8CBA1B727C1100EF4BEB /* Tagebuch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CB81B727C1100EF4BEB /* Tagebuch.xcdatamodeld */; };
@@ -15,7 +16,6 @@
 		9D2A8CCA1B727C1100EF4BEB /* TagebuchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CC91B727C1100EF4BEB /* TagebuchTests.swift */; };
 		9D2A8CD51B727C1100EF4BEB /* TagebuchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CD41B727C1100EF4BEB /* TagebuchUITests.swift */; };
 		9D2A8CE31B72848E00EF4BEB /* TagebuchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CE21B72848E00EF4BEB /* TagebuchTableViewController.swift */; };
-		9D2A8CE51B72858100EF4BEB /* Eintrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CE41B72858100EF4BEB /* Eintrag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225A3FCA1B736CAD00C88517 /* Tagebuch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tagebuch-Bridging-Header.h"; sourceTree = "<group>"; };
+		225A3FCB1B736CAE00C88517 /* Eintrag+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Eintrag+CoreDataProperties.h"; sourceTree = "<group>"; };
+		225A3FCC1B736CAE00C88517 /* Eintrag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eintrag.h; sourceTree = "<group>"; };
+		225A3FCD1B736CAE00C88517 /* Eintrag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eintrag.m; sourceTree = "<group>"; };
 		9D2A8CAE1B727C1100EF4BEB /* Tagebuch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tagebuch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2A8CB11B727C1100EF4BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2A8CB61B727C1100EF4BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +54,6 @@
 		9D2A8CD41B727C1100EF4BEB /* TagebuchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagebuchUITests.swift; sourceTree = "<group>"; };
 		9D2A8CD61B727C1100EF4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D2A8CE21B72848E00EF4BEB /* TagebuchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagebuchTableViewController.swift; sourceTree = "<group>"; };
-		9D2A8CE41B72858100EF4BEB /* Eintrag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eintrag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +106,15 @@
 			children = (
 				9D2A8CB11B727C1100EF4BEB /* AppDelegate.swift */,
 				9D2A8CE21B72848E00EF4BEB /* TagebuchTableViewController.swift */,
-				9D2A8CE41B72858100EF4BEB /* Eintrag.swift */,
 				9D2A8CB51B727C1100EF4BEB /* Main.storyboard */,
 				9D2A8CBB1B727C1100EF4BEB /* Assets.xcassets */,
 				9D2A8CBD1B727C1100EF4BEB /* LaunchScreen.storyboard */,
 				9D2A8CC01B727C1100EF4BEB /* Info.plist */,
 				9D2A8CB81B727C1100EF4BEB /* Tagebuch.xcdatamodeld */,
+				225A3FCB1B736CAE00C88517 /* Eintrag+CoreDataProperties.h */,
+				225A3FCC1B736CAE00C88517 /* Eintrag.h */,
+				225A3FCD1B736CAE00C88517 /* Eintrag.m */,
+				225A3FCA1B736CAD00C88517 /* Tagebuch-Bridging-Header.h */,
 			);
 			path = Tagebuch;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 		9D2A8CA61B727C1100EF4BEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Christopher Lindhof";
 				TargetAttributes = {
@@ -264,7 +271,7 @@
 			files = (
 				9D2A8CE31B72848E00EF4BEB /* TagebuchTableViewController.swift in Sources */,
 				9D2A8CBA1B727C1100EF4BEB /* Tagebuch.xcdatamodeld in Sources */,
-				9D2A8CE51B72858100EF4BEB /* Eintrag.swift in Sources */,
+				225A3FCE1B736CAE00C88517 /* Eintrag.m in Sources */,
 				9D2A8CB21B727C1100EF4BEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tagebuch/Info.plist;
@@ -413,6 +421,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Chris-Projects.Tagebuch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tagebuch/Tagebuch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -420,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tagebuch/Info.plist;
@@ -428,6 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Chris-Projects.Tagebuch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tagebuch/Tagebuch-Bridging-Header.h";
 			};
 			name = Release;
 		};
