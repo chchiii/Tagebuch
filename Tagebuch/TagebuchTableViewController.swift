@@ -96,12 +96,15 @@ class TagebuchTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowEntry" {
-//            var dvc =
+            let dvc = segue.destinationViewController as UIViewController
+            //setup dvc
             
         } else {
 //          CODe
         }
     }
-    
+    @IBAction func cancel(sender: UIStoryboardSegue) {
+       dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		225A3FCE1B736CAE00C88517 /* Eintrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 225A3FCD1B736CAE00C88517 /* Eintrag.m */; };
+		22CB9DF01B73A5C800853B80 /* NeuerEintragViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB9DEF1B73A5C800853B80 /* NeuerEintragViewController.swift */; };
 		9D2A8CB21B727C1100EF4BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CB11B727C1100EF4BEB /* AppDelegate.swift */; };
 		9D2A8CB71B727C1100EF4BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2A8CB51B727C1100EF4BEB /* Main.storyboard */; };
 		9D2A8CBA1B727C1100EF4BEB /* Tagebuch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A8CB81B727C1100EF4BEB /* Tagebuch.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 		225A3FCB1B736CAE00C88517 /* Eintrag+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Eintrag+CoreDataProperties.h"; sourceTree = "<group>"; };
 		225A3FCC1B736CAE00C88517 /* Eintrag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eintrag.h; sourceTree = "<group>"; };
 		225A3FCD1B736CAE00C88517 /* Eintrag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eintrag.m; sourceTree = "<group>"; };
+		22CB9DEF1B73A5C800853B80 /* NeuerEintragViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuerEintragViewController.swift; sourceTree = "<group>"; };
 		9D2A8CAE1B727C1100EF4BEB /* Tagebuch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tagebuch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2A8CB11B727C1100EF4BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2A8CB61B727C1100EF4BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,9 +108,10 @@
 			children = (
 				9D2A8CB11B727C1100EF4BEB /* AppDelegate.swift */,
 				9D2A8CE21B72848E00EF4BEB /* TagebuchTableViewController.swift */,
+				22CB9DEF1B73A5C800853B80 /* NeuerEintragViewController.swift */,
 				9D2A8CB51B727C1100EF4BEB /* Main.storyboard */,
-				9D2A8CBB1B727C1100EF4BEB /* Assets.xcassets */,
 				9D2A8CBD1B727C1100EF4BEB /* LaunchScreen.storyboard */,
+				9D2A8CBB1B727C1100EF4BEB /* Assets.xcassets */,
 				9D2A8CC01B727C1100EF4BEB /* Info.plist */,
 				9D2A8CB81B727C1100EF4BEB /* Tagebuch.xcdatamodeld */,
 				225A3FCB1B736CAE00C88517 /* Eintrag+CoreDataProperties.h */,
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CB9DF01B73A5C800853B80 /* NeuerEintragViewController.swift in Sources */,
 				9D2A8CE31B72848E00EF4BEB /* TagebuchTableViewController.swift in Sources */,
 				9D2A8CBA1B727C1100EF4BEB /* Tagebuch.xcdatamodeld in Sources */,
 				225A3FCE1B736CAE00C88517 /* Eintrag.m in Sources */,

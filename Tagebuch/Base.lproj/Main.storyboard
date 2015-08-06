@@ -8,7 +8,7 @@
         <!--Neuer Eintrag-->
         <scene sceneID="sbF-RY-OM5">
             <objects>
-                <viewController id="TbH-4G-Inh" sceneMemberID="viewController">
+                <viewController id="TbH-4G-Inh" customClass="NeuerEintragViewController" customModule="Tagebuch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bYX-Hc-G8q"/>
                         <viewControllerLayoutGuide type="bottom" id="nX2-Cu-aZW"/>
@@ -19,11 +19,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Neuer Eintrag" id="sHE-rN-Mkp">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="SFu-Ty-xoy"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="SFu-Ty-xoy">
+                            <connections>
+                                <segue destination="Gfj-tg-UY3" kind="unwind" unwindAction="cancel:" id="RQl-8M-1mF"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="ilR-rd-0u5"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgp-0U-mEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gfj-tg-UY3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2146" y="-469"/>
         </scene>
@@ -121,6 +126,7 @@
         <!--Navigation Controller-->
         <scene sceneID="KeT-y5-cCD">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgd-Pp-LuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4L5-0S-Oh4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kGB-6w-1EQ">
@@ -132,7 +138,6 @@
                         <segue destination="TbH-4G-Inh" kind="relationship" relationship="rootViewController" id="ENx-6v-GyH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zgd-Pp-LuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1334" y="-469"/>
         </scene>
