@@ -89,7 +89,7 @@
         <!--Eintrag-->
         <scene sceneID="Ln7-hE-inQ">
             <objects>
-                <viewController id="5Ji-ig-UMV" sceneMemberID="viewController">
+                <viewController id="5Ji-ig-UMV" customClass="EintragViewController" customModule="Tagebuch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RAE-u3-AWY"/>
                         <viewControllerLayoutGuide type="bottom" id="G2N-cQ-7mg"/>
@@ -97,9 +97,27 @@
                     <view key="view" contentMode="scaleToFill" id="WvU-fP-Ykv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTp-st-A3v">
+                                <rect key="frame" x="182" y="175" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipw-JB-Yn7">
+                                <rect key="frame" x="182" y="222" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Eintrag" id="x0N-QZ-4Kj"/>
+                    <connections>
+                        <outlet property="label1" destination="nTp-st-A3v" id="rRU-ch-40A"/>
+                        <outlet property="label2" destination="Ipw-JB-Yn7" id="GDw-lf-d9W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9z-hm-nWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

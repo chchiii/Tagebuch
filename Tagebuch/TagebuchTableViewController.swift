@@ -12,8 +12,9 @@ import CoreData
 class TagebuchTableViewController: UITableViewController {
 
     
-    var tagebuchEinräge: [AnyObject] = []
+    var tagebuchEinräge: [Eintrag] = []
     var managedObjectContext: NSManagedObjectContext? = nil
+    var selectedRow = 0
     
     
     struct CoreDataConstants {
@@ -25,7 +26,6 @@ class TagebuchTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(managedObjectContext)
         
     }
     
@@ -34,6 +34,7 @@ class TagebuchTableViewController: UITableViewController {
         updateModell()
         tableView.reloadData()
         saveTagebuchArray()
+        print(tagebuchEinräge)
     }
  
 // MARK: - Data Modell functions
@@ -45,14 +46,13 @@ class TagebuchTableViewController: UITableViewController {
     func updateTagebuchArray() {
         let fetchRequest = NSFetchRequest(entityName: CoreDataConstants.entityName)
             fetchRequest.sortDescriptors = [NSSortDescriptor(key: "title", ascending: false)]
-            print(fetchRequest)
             try! tagebuchEinräge = managedObjectContext?.executeFetchRequest(fetchRequest) as! [Eintrag]
     }
     
     func saveTagebuchArray() {
         let newTagebuchEintrag = NSEntityDescription.insertNewObjectForEntityForName(CoreDataConstants.entityName, inManagedObjectContext: managedObjectContext!) as! Eintrag
-        newTagebuchEintrag.name = "Test"
-        newTagebuchEintrag.title = "Test"
+        newTagebuchEintrag.name = "Name"
+        newTagebuchEintrag.title = "Title"
         tagebuchEinräge.append(newTagebuchEintrag)
         save()
         updateTagebuchArray()
@@ -74,16 +74,16 @@ class TagebuchTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-            print("lol")
         let Text = tagebuchEinräge[indexPath.row]
             cell.textLabel?.text = Text.title
+            cell.detailTextLabel?.text = Text.name
         
         return cell
     }
     
    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("tab")
         performSegueWithIdentifier("ShowEntry", sender: nil)
+        selectedRow = indexPath.row
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -96,8 +96,11 @@ class TagebuchTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowEntry" {
-            let dvc = segue.destinationViewController as UIViewController
-            //setup dvc
+            if let dvc = segue.destinationViewController as? EintragViewController {
+                dvc.titel = tagebuchEinräge[selectedRow].name!
+                dvc.name = tagebuchEinräge[selectedRow].title!
+            }
+
             
         } else {
 //          CODe

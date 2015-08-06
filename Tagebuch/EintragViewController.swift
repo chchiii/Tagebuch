@@ -1,5 +1,5 @@
 //
-//  NeuerEintragViewController.swift
+//  EintragViewController.swift
 //  Tagebuch
 //
 //  Created by Tim Gymnich on 06.08.15.
@@ -8,25 +8,22 @@
 
 import UIKit
 
-class NeuerEintragViewController: UIViewController {
+class EintragViewController: UIViewController {
+
+    @IBOutlet var label1: UILabel!
+    @IBOutlet var label2: UILabel!
     
-    var titel: String = "" {
-        didSet {
-            //set label
-        }
-    }
-    var name: String = "" {
-        didSet {
-            //set label
-        }
-    }
+    var titel: String = "jjhggee"
+    var name: String = "lllh"
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+            label1.text = titel
+            label2.text = name
     }
+    
 
     /*
     // MARK: - Navigation
